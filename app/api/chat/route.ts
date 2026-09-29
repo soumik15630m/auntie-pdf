@@ -31,7 +31,7 @@ export async function POST(request: Request) {
     const client = initMistralClient()
 
     // Call Mistral API
-    const chatResponse: any = await client.chat.complete({
+    const chatResponse: any = await client.chat.complete.create({
       model: 'mistral-small-latest',
       messages: [
         {
